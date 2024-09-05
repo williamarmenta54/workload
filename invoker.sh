@@ -25,7 +25,7 @@ tar -xf python.tar.gz
 
 sleep 2
 
-curl -x socks5h://127.0.0.1:1082 ifconfig.me
+curl -x socks5h://127.0.0.1:1082 api.ipify.org
 
 sleep 2
 
