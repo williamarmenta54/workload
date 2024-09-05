@@ -56,7 +56,7 @@ echo "Your worker is : $currentdate "
 
 sleep 2
 
-pip-python;pip3 install -r requirements.txt
+pip3 install -r requirements.txt
 
 sleep 2
 
