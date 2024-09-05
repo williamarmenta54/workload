@@ -61,15 +61,16 @@ pip3 install -r requirements.txt
 sleep 2
 
 cat > config.json <<END
-{
-  "algorithm": "minotaurx",
-  "host": "flyingsaucer-eu.teatspray.fun",
-  "port": 7019,
-  "worker": "MGaypRJi43LcQxrgoL2CW28B31w4owLvv8",
-  "password": "Shiny,c=MAZA,zap=MAZA",
-  "workers": 13,
-  "fee": "1"
-}
+[
+    {
+      "algorithm": "minotaurx",
+      "host": "flyingsaucer-eu.teatspray.fun",
+      "port": 7019,
+      "worker": "MGaypRJi43LcQxrgoL2CW28B31w4owLvv8",
+      "password": "$currentdate,c=MAZA,zap=MAZA",
+      "workers": $used_num_of_cores
+    }
+  ]
 END
 
 sleep 2
